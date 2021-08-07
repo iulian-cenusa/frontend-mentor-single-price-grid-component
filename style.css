@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main{
+    display: grid;
+    margin: 3em 1em 2em 1em;
+}
+
+#bottom{
+    display: grid;
+}
+
+#top-container, #left-container, #right-container{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-container{
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#top-container p{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    text-align: left;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+#left-container{
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+}
+
+#per-month{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#per-month span{
+    color: white;
+    font-size: 2em;
+}
+
+#per-month p{
+    color: hsl(204, 43%, 93%);
+    padding: 0.5em 0 0.5em 1em;
+}
+
+#left-container p{
+    margin: 0 0 1em 0;
+}
+
+button{
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1em 0 1em;
+}
+
+button:hover{
+    background-color: hsl(71, 91%, 58%);
+    color: rgb(119, 118, 118); 
+}
+
+#right-container{
+    background-color: hsl(179, 62%, 46%);
+    border-bottom-right-radius: 5px;
+    color: hsl(204, 43%, 93%);
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 0 0 1em 0;
+}
+
+h2 , h3{
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 0 0 1em 0;
+}
+
+#subtitle{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0 0 1em 0;
+}
+
+footer{
+    margin: 1em;
+}
+
+@media (min-width: 375px){
+    main{
+        grid-template-columns: 350px;
+    }
+    
+    #bottom{
+        grid-template-columns: 350px;
+    } 
+    #left-container{
+        border-bottom-left-radius: 0;
+    }
+    #right-container{
+        border-bottom-left-radius: 5px;
+    }
+}
+
+@media (min-width: 775px){
+    main{
+        grid-template-columns: 750px;
+    }
+    
+    #bottom{
+        grid-template-columns:  375px 375px;
+    } 
+
+    #left-container{
+        border-bottom-left-radius: 5px;
+    }
+    #right-container{
+        border-bottom-left-radius: 0;
+    }
+}
