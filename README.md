@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-This project helped me gain a better understanding of CSS grid and felxbox;
+This project helped me gain a better understanding of CSS grid and felxbox.
 
 ### Continued development
 
@@ -55,4 +55,3 @@ Even if this project looks completed, there will still be always something to im
 - Frontend Mentor - [@iulian-cenusa](https://www.frontendmentor.io/profile/iulian-cenusa)
 - Twitter - [@IulianCenusa](https://twitter.com/IulianCenusa)
 - Other Projects - [Bitbucket Repo](https://bitbucket.org/iulian_cenusa/)
-
